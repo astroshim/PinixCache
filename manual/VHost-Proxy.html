@@ -1,0 +1,1249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. 가상호스트 목록 &mdash; Read the Docs Template 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read the Docs Template 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="1. Name" href="VHost.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Read the Docs Template
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Global.html">1. Global Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#pinix-process-user">1.1 PINIX Process User</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#worker-process-count">1.2 Worker Process Count</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#access-log-file-path">1.3 Access log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#log-format">1.4 Log format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id3">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#proxy">2. Proxy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#temporary-cache-path">2.1 Temporary Cache Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#cache-path-list-config">2.2 Cache Path List &amp; Config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id5">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#server-access-control">3. Server Access Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#cluster">4. Cluster</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#id7">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#vhost-list">5. VHost List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html">1. Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Origin.html#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html#schedule">2. Schedule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Origin.html#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html#server">3. Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VHost.html">1. Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost.html#uri-terms">2. uri_terms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost.html#upper-case">3. Upper Case</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost.html#lower-case">4. Lower Case</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id3">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost.html#location-mode">5. Location Mode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#normal-mode">5.1 Normal Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#streaming">5.1.1 Streaming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#ttl">5.1.2. TTL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id5">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#vary">5.1.3. Vary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#rewrite-type">5.1.4. Rewrite Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id7">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#cache-mode">5.2 Cache Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#cache">5.2.1. Cache</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id8">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id9">5.2.2 Streaming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id10">5.2.3. TTL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id11">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#id12">5.2.4. Vary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#freshness-check">5.2.5. Freshness Check</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id13">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#intercept-errors">5.2.6. Intercept Errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id14">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#bypass">5.2.7. Bypass</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id15">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#set-header">5.2.8. Set Header</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#syntax-default">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#ignore-headers">5.2.9. Ignore Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id16">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#add-headers">5.2.10. Add Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id17">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#pass-headers">5.2.11. Pass Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id18">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#next-upstream">5.2.12. Next Upstream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id19">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#connect-timeout">5.2.13. Connect Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id20">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#send-timeout">5.2.14. Send Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id21">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#read-timeout">5.2.15. Read Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost.html#id22">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost.html#proxy-pass">5.2.16. Proxy Pass</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">1. 가상호스트 목록</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#process">2. Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syntax">* Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#service-port">2.2 Service Port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#record-404-error-log">2.3 Record 404 error log</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#default-type">2.4 Default Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#error-log-file-path">2.5 Error Log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#common-log-file-path">2.6 Common Log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#access-log-format-type">2.7 Access log format type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#https">3. HTTPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#port">3.2 Port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#protocols">3.3 Protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#certificate">3.4 Certificate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#certificate-key">3.5 Certificate Key</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#session-timeout">3.6 Session Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#client">4. Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#etag">4.1 ETAG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#falsification-check">4.2 Falsification Check</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#client-response-header">4.3 Client Response Header</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#client-body-timeout">4.4 Client Body Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#client-header-timeout">4.5 Client Header Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#send-timeout">4.6 Send Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id18">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#keepalive-timeout">4.7 Keepalive Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#keepalive-requests">4.8 Keepalive Requests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#proxy">5. Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#secure-url">6. Secure URL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id21">6.1 Secure URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#secure-algorithm-type">6.2 Secure Algorithm Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#secure-url-character-case">6.3 Secure URL Character Case</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id23">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#callback-domain">6.4 Callback Domain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#callback-file-path">6.5 Callback File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id25">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#url-forwarding-results">6.6 URL forwarding results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#secure-url-key">6.7 Secure URL Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#secure-url-value">6.8 Secure URL Value</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#server-access-control">7. Server Access Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id27">7.1 Server Access Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bandwidth">7.2 Bandwidth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id29">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bandwidth-after">7.3 Bandwidth After</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id30">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resolver">7.4 Resolver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id31">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resolver-timeout">7.5 Resolver Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id32">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cache-regex-purge">7.6 Cache Regex Purge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id33">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#compression">8. Compression</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gzip">8.1 GZip</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id34">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gzip-static">8.2 Gzip Static</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id35">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gzip-disable">8.3 Gzip Disable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id36">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#mime-types">9. Mime Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id37">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read the Docs Template</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>1. 가상호스트 목록</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/VHost-Proxy.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div id="vhost-list"><div class="highlight-python"><div class="highlight"><pre>&lt;h4&gt;목차&lt;/h4&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&quot;#1-%EA%B0%80%EC%83%81%ED%98%B8%EC%8A%A4%ED%8A%B8-%EB%AA%A9%EB%A1%9D&quot;&gt;가상호스트 목록&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#2-process&quot;&gt;Process&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#21----%EA%B0%80%EC%83%81%ED%98%B8%EC%8A%A4%ED%8A%B8-domain&quot;&gt;가상호스트 Domain&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#22----service-port&quot;&gt;Service Port&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#23----record-404-error-log&quot;&gt;Record 404 error log&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#24----default-type&quot;&gt;Default Type&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#25----error-log-file-path&quot;&gt;Error Log File Path&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#26----common-log-file-path&quot;&gt;Common Log File Path&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#27----access-log-format-type&quot;&gt;Access log format type&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#3-https&quot;&gt;HTTPS&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#31----https-mode&quot;&gt;HTTPS Mode&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#32----port&quot;&gt;Port&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#33----protocols&quot;&gt;Protocols&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#34-certificate&quot;&gt;Certificate&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#35----certificate-key&quot;&gt;Certificate Key&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#36----session-timeout&quot;&gt;Session Timeout&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#4-client&quot;&gt;Client&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#41----etag&quot;&gt;ETAG&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#42----falsification-check&quot;&gt;Falsification Check&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#43----client-response-header&quot;&gt;Client Response Header&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#44----client-body-timeout&quot;&gt;Client Body Timeout&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#45----client-header-timeout&quot;&gt;Client Header Timeout&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#46----send-timeout&quot;&gt;Send Timeout&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#47----keepalive-timeout&quot;&gt;Keepalive Timeout&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#48----keepalive-requests&quot;&gt;Keepalive Requests&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://github.com/NFLabs/PINIX/wiki/Config---VHost-(-Proxy-)&quot;&gt;Proxy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#6--secure-url&quot;&gt;Secure URL&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#61----secure-url&quot;&gt;Secure URL&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#62----secure-algorithm-type&quot;&gt;Secure Algorithm Type&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#63----secure-url-character-case&quot;&gt;Secure URL Character Case&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#64----callback-domain&quot;&gt;Callback Domain&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#65----callback-file-path&quot;&gt;Callback File Path&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#66----url-forwarding-results&quot;&gt;URL forwarding results&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#67----secure-url-key&quot;&gt;Secure URL Key&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#68----secure-url-value&quot;&gt;Secure URL Value&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#7-server-access-control&quot;&gt;Server Access Control&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#71----server-access-control&quot;&gt;Server Access Control&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#72----bandwidth&quot;&gt;Bandwidth&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#73----bandwidth-after&quot;&gt;Bandwidth After&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#74----resolver&quot;&gt;Resolver&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#75----resolver-timeout&quot;&gt;Resolver Timeout&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#76----cache-regex-purge&quot;&gt;Cache Regex Purge&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#8-compression&quot;&gt;Compression&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#81----gzip&quot;&gt;GZip&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#82----gzip-static&quot;&gt;Gzip Static&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#83----gzip-disable&quot;&gt;Gzip Disable&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#9-mime-types&quot;&gt;Mime Types&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</pre></div>
+</div>
+</div><hr class="docutils" />
+<div class="section" id="id1">
+<h1>1. 가상호스트 목록<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>PINIX의 가상호스트(도메인별 서비스) 목록을 관리한다. 가상호스트(도메인별
+서비스)의 추가, 삭제, 복제 기능을 수행할 수 있다. 삭제 기능은 각
+가상호스트 설정 내부 항목에서 지원한다.</p>
+<ul class="simple">
+<li>추가 : 신규 가상호스트 설정을 추가한다.</li>
+<li>적용 : 가상호스트를 서비스에 반영할지 여부를 결정한다..</li>
+<li>복제 : 기존 가상호스트 설정 정보를 다른 도메인 형식으로 서비스할 수
+있다. 단, 암호화 URL 항목은 복제대상에서 제외된다.</li>
+</ul>
+</div>
+<div class="section" id="process">
+<h1>2. Process<a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h1>
+<p>가상호스트 운영에 필요한 기본적인 정보를 설정한다. #### 2.1 가상호스트
+Domain 가상호스트에 지정될 서비스 도메인 정보 가상호스트에서 서비스할
+도메인 정보를 설정한다. 도메인 정보는 운영상 안정성을 목적으로 쉬운 접근
+/ 수정을 허용하지 않는다. 때문에 가상호스트 추가, 복제 시에만 설정이
+가능하고, 이 후 수정은 불가능 하다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : domain
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="syntax">
+<h2>* Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;domain&quot;</span> <span class="p">:</span> <span class="s">&quot;vhost domain&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="service-port">
+<h2>2.2 Service Port<a class="headerlink" href="#service-port" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">가상호스트에서 서비스할 포트를 설정한다.</div>
+<div class="line">잘 알려진 포트(Well Known port)의 경우 사용이 제한되며, 80 포트만을
+예외로 지정할 수 있다.</div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : listen
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h3>* Syntax<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;listen&quot;</span> <span class="p">:</span> <span class="s">&quot;80&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="record-404-error-log">
+<h2>2.3 Record 404 error log<a class="headerlink" href="#record-404-error-log" title="Permalink to this headline">¶</a></h2>
+<p>Page Not Found(404) 상태 코드 발생 시, 로그를 기록할 지 여부를 결정한다.
+ON일 경우 해당 기능이 활성화 된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : log_not_found
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id3">
+<h3>* Syntax<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;log_not_found&quot;</span> <span class="p">:</span> <span class="s">&quot;on&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="default-type">
+<h2>2.4 Default Type<a class="headerlink" href="#default-type" title="Permalink to this headline">¶</a></h2>
+<p>PINIX의 요청 응답시, 요청한 클라이언트에서 기본적으로 동작할
+Content-Type을 정의한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : default_type
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id4">
+<h3>* Syntax<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;default_type&quot;</span> <span class="p">:</span> <span class="s">&quot;application/octet-stream&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="error-log-file-path">
+<h2>2.5 Error Log File Path<a class="headerlink" href="#error-log-file-path" title="Permalink to this headline">¶</a></h2>
+<p>에러로그를 기록할 파일경로를 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : error_log
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id5">
+<h3>* Syntax<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;error_log&quot;</span> <span class="p">:</span> <span class="s">&quot;/var/log/pinix/pinix_status.log&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="common-log-file-path">
+<h2>2.6 Common Log File Path<a class="headerlink" href="#common-log-file-path" title="Permalink to this headline">¶</a></h2>
+<p>서비스 로그를 기록할 파일경로를 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : access_log
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id6">
+<h3>* Syntax<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;access_log&quot;</span> <span class="p">:</span> <span class="s">&quot;/var/log/pinix/access.log&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="access-log-format-type">
+<h2>2.7 Access log format type<a class="headerlink" href="#access-log-format-type" title="Permalink to this headline">¶</a></h2>
+<p>전역설정에서 정의한 로그포멧 형태들 중 하나를 선택하여, 서비스 로그에
+반영한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : access_log_type
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id7">
+<h3>* Syntax<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;access_log_type&quot;</span> <span class="p">:</span> <span class="s">&quot;main&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="https">
+<h1>3. HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h1>
+<p>SSL 보안 인증서를 통한 요청에 대한 처리를 정의 한다. #### 3.1 HTTPS Mode
+SSL 보안 인증서를 통한 요청 기능 활성화 옵션 ON을 선택할 경우 해당
+기능이 활성화 된다.</p>
+<div class="section" id="port">
+<h2>3.2 Port<a class="headerlink" href="#port" title="Permalink to this headline">¶</a></h2>
+<p>SSL 보안 인증서 프로토콜에 대한 서비스 포트를 지정한다. (기본값 443)</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : listen
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id8">
+<h3>* Syntax<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;listen&quot;</span> <span class="p">:</span> <span class="s">&quot;443 ssl&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="protocols">
+<h2>3.3 Protocols<a class="headerlink" href="#protocols" title="Permalink to this headline">¶</a></h2>
+<p>SSL 인증서 보안 프로토콜의 버전을 지정한다. 프로토콜 지정에 있어 다음과
+같은 버전 매칭 정보를 참조한다.</p>
+<ul class="simple">
+<li>TLSv1 = SSL3.1</li>
+<li>TLSv1.1 = SSL3.2</li>
+<li>TLSv1.2 = SSL3.3</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : ssl_protocols
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id9">
+<h3>* Syntax<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;ssl_protocols&quot;</span> <span class="p">:</span> <span class="s">&quot;TLSv1 TLSv1.1 TLSv1.2&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="certificate">
+<h2>3.4 Certificate<a class="headerlink" href="#certificate" title="Permalink to this headline">¶</a></h2>
+<p>SSL 인증서 파일 경로를 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : ssl_certificate
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id10">
+<h3>* Syntax<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;ssl_certificate&quot;</span> <span class="p">:</span> <span class="s">&quot;/etc/pinix/cert/pinix_cert.pem&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="certificate-key">
+<h2>3.5 Certificate Key<a class="headerlink" href="#certificate-key" title="Permalink to this headline">¶</a></h2>
+<p>SSL 인증서 키 파일 경로를 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : ssl_certificate_key
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id11">
+<h3>* Syntax<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;ssl_certificate_key&quot;</span> <span class="p">:</span> <span class="s">&quot;/etc/pinix/cert/pinix_key.pem&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="session-timeout">
+<h2>3.6 Session Timeout<a class="headerlink" href="#session-timeout" title="Permalink to this headline">¶</a></h2>
+<p>https 세션에 대한 타임아웃을 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : ssl_session_timeout
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id12">
+<h3>* Syntax<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;ssl_session_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;5m&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="client">
+<h1>4. Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="etag">
+<h2>4.1 ETAG<a class="headerlink" href="#etag" title="Permalink to this headline">¶</a></h2>
+<p>요청한 URL이 이전에 요청했던 컨텐츠와 동일 여부 확인하여 컨텐츠의 변경
+여부를 검사한다. ON으로 설정했을 시, 해당 기능이 활성화된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : etag
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id13">
+<h3>* Syntax<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;etag&quot;</span> <span class="p">:</span> <span class="s">&quot;on&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="falsification-check">
+<h2>4.2 Falsification Check<a class="headerlink" href="#falsification-check" title="Permalink to this headline">¶</a></h2>
+<p>Cache 대상 컨텐츠의 변조여부에 대한 점검 기능을 활용할지 여부를
+결정한다. ON으로 설정했을 시, 해당 기능이 활성화된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : falsification_check
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id14">
+<h3>* Syntax<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;falsification_check&quot;</span> <span class="p">:</span> <span class="s">&quot;off&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="client-response-header">
+<h2>4.3 Client Response Header<a class="headerlink" href="#client-response-header" title="Permalink to this headline">¶</a></h2>
+<p>PINIX에 대한 클라이언트 요청 헤더를 재설정한다. 응답 헤더의 설정에 따라
+캐시를 요청하는 클라이언트의 정의된 후속 동작을 지정할 수 있다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : add_header
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id15">
+<h3>* Syntax<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;add_header&quot;</span> <span class="p">:</span> <span class="s">&quot;X-Location </span><span class="se">\&quot;</span><span class="s">$1.$2</span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="client-body-timeout">
+<h2>4.4 Client Body Timeout<a class="headerlink" href="#client-body-timeout" title="Permalink to this headline">¶</a></h2>
+<p>client가 보낸 요청 바디에 대한 읽기 제한 시간을 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : client_body_timeout
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id16">
+<h3>* Syntax<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;client_body_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;300s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="client-header-timeout">
+<h2>4.5 Client Header Timeout<a class="headerlink" href="#client-header-timeout" title="Permalink to this headline">¶</a></h2>
+<p>client가 보낸 요청 헤더에 대한 읽기 제한 시간을 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : client_header_timeout
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id17">
+<h3>* Syntax<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;client_header_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;300s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="send-timeout">
+<h2>4.6 Send Timeout<a class="headerlink" href="#send-timeout" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트에 대한 응답 전송 제한 시간을 설정 한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : send_timeout
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id18">
+<h3>* Syntax<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;send_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;300s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="keepalive-timeout">
+<h2>4.7 Keepalive Timeout<a class="headerlink" href="#keepalive-timeout" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트가 PINIX에 대한 접근 방식 중, HTTP Keepalive 옵션에 대한 최대
+유지 시간을 지정한다. 지정된 타임아웃 시간 동안 연결은 유지되며,
+타임아웃 시간을 초과할 시 PINIX은 연결을 해제한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : keepalive_timeout
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id19">
+<h3>* Syntax<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;keepalive_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;30 30&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="keepalive-requests">
+<h2>4.8 Keepalive Requests<a class="headerlink" href="#keepalive-requests" title="Permalink to this headline">¶</a></h2>
+<p>?) PINIX이 클라이언트 Keepalive 연결 방식을 최대 수용할 수 있는 수를
+지정한다. ?) 하나의 keepalive 접속을 통해 서비스되는 최대 요청 수
+(기본값 100) 의문사항이 존재하는 부분&lt;&lt;&lt;&lt;</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : keepalive_requests
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id20">
+<h3>* Syntax<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;keepalive_requests&quot;</span> <span class="p">:</span> <span class="s">&quot;100&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="proxy">
+<h1>5. Proxy<a class="headerlink" href="#proxy" title="Permalink to this headline">¶</a></h1>
+<p>Proxy 항목으로 이동</p>
+</div>
+<div class="section" id="secure-url">
+<h1>6. Secure URL<a class="headerlink" href="#secure-url" title="Permalink to this headline">¶</a></h1>
+<p>해당 가상호스트 정보를 기반으로 요청되는 URI에 대해서, 암호화 요청이
+가능하도록 설정할 수 있다. 암호화 요청이란, URI의 형상이 통상적으로
+의미를 지니지 않은 특정 암호화 알고리즘을 통해 난독화 되어 제공되는
+형상의 URI를 일컫는다. 설정시 생성 완료된 가상호스트에 대해서만 해당
+기능을 활성화 할 수 있음에 주의해야 한다.</p>
+<div class="section" id="id21">
+<h2>6.1 Secure URL<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<p>암호화 URI 사용 여부를 결정한다. ON으로 설정할 시, 해당 기능이 활성화
+된다.</p>
+</div>
+<div class="section" id="secure-algorithm-type">
+<h2>6.2 Secure Algorithm Type<a class="headerlink" href="#secure-algorithm-type" title="Permalink to this headline">¶</a></h2>
+<p>URI의 암호화 알고리즘 형태를 지정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : pinix_auth_algorithm
+- Type    : json array
+- Location: vhost, secure_url
+</pre></div>
+</div>
+<div class="section" id="id22">
+<h3>* Syntax<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;pinix_auth_algorithm&quot;</span> <span class="p">:</span> <span class="s">&quot;rsa&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="secure-url-character-case">
+<h2>6.3 Secure URL Character Case<a class="headerlink" href="#secure-url-character-case" title="Permalink to this headline">¶</a></h2>
+<p>요청 받은 암호화 URI에 대하여, URI를 대문자/소문자 전환하여 처리할
+것인지를 지정한다. None으로 설정할시 해당 기능은 비활성화 되어,
+클라이언트에서 요청한 URI를 그대로 처리에 사용하게 된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : pinix_api_letter_case
+- Type    : json array
+- Location: vhost, secure_url
+</pre></div>
+</div>
+<div class="section" id="id23">
+<h3>* Syntax<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;pinix_api_letter_case&quot;</span> <span class="p">:</span> <span class="s">&quot;lower&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="callback-domain">
+<h2>6.4 Callback Domain<a class="headerlink" href="#callback-domain" title="Permalink to this headline">¶</a></h2>
+<p>가상호스트의 도메인 설정과는 별도로 해당 암호화 URL에 대한 처리를 할 수
+있는 별도의 도메인 정보를 할당한다. PINIX은 해당 항목을 통해 지정된
+도메인에 대한 요청은 모두 암호화 URL에 대한 요청이라고 판단되고
+처리된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : pinix_api_callback_domain
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id24">
+<h3>* Syntax<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;pinix_api_callback_domain&quot;</span> <span class="p">:</span> <span class="s">&quot;secure_url.com&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="callback-file-path">
+<h2>6.5 Callback File Path<a class="headerlink" href="#callback-file-path" title="Permalink to this headline">¶</a></h2>
+<p>암호화 URL에 대한 도메인 요청 항목서, 해당 암호화 URL을 처리할 CGI/WSGI
+파일의 패스를 지정한다. 해당 CGI/WSGI 파일의 처리를 통해 암호화 URL은
+최종적으로 복호화된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : pinix_api_callback_file
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id25">
+<h3>* Syntax<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;pinix_api_callback_file&quot;</span> <span class="p">:</span> <span class="s">&quot;/callback_file.php&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="url-forwarding-results">
+<h2>6.6 URL forwarding results<a class="headerlink" href="#url-forwarding-results" title="Permalink to this headline">¶</a></h2>
+<p>복호화 된 암호화 URL을 전달할 결과 파일 패스를 지정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : pinix_url_forwarding
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id26">
+<h3>* Syntax<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;pinix_url_forwarding&quot;</span> <span class="p">:</span> <span class="s">&quot;/proc&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="secure-url-key">
+<h2>6.7 Secure URL Key<a class="headerlink" href="#secure-url-key" title="Permalink to this headline">¶</a></h2>
+<p>암호화 URL의 Key가 될 패스워드 값을 지정한다. 해당 값을 지정한 후,
+“Create Secure URL Key” 버튼을 통해, 실질적으로 사용될 암호화 URL Public
+Key, Private Key 등이 발급된다.</p>
+</div>
+<div class="section" id="secure-url-value">
+<h2>6.8 Secure URL Value<a class="headerlink" href="#secure-url-value" title="Permalink to this headline">¶</a></h2>
+<p>Secure URL Key를 통해 발급된 암호화 URL 인증서 정보.</p>
+</div>
+</div>
+<div class="section" id="server-access-control">
+<h1>7. Server Access Control<a class="headerlink" href="#server-access-control" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id27">
+<h2>7.1 Server Access Control<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>PINIX 서버의 접근을 허용/거부 할 IP를 설정한다. IP 대신 ‘all’을 지정하면
+모든 접근 허용 및 거부를 의미한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : allow, deny
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id28">
+<h3>* Syntax<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+        <span class="s">&quot;allow&quot;</span> <span class="p">:</span>
+        <span class="p">[</span>
+          <span class="s">&quot;192.168.1.0/24&quot;</span>
+          <span class="s">&quot;222.168.1.0/24&quot;</span>
+        <span class="p">],</span>
+        <span class="s">&quot;deny&quot;</span> <span class="p">:</span>
+        <span class="p">[</span>
+          <span class="s">&quot;all&quot;</span>
+        <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bandwidth">
+<h2>7.2 Bandwidth<a class="headerlink" href="#bandwidth" title="Permalink to this headline">¶</a></h2>
+<p>해당 VHost 정보의 최대 대역폭을 지정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : limit_rate
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id29">
+<h3>* Syntax<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;limit_rate&quot;</span> <span class="p">:</span> <span class="s">&quot;30m&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bandwidth-after">
+<h2>7.3 Bandwidth After<a class="headerlink" href="#bandwidth-after" title="Permalink to this headline">¶</a></h2>
+<p>limit_rate_after 1m; - 이 size만큼 응답한 이후에 limit_rate 속도로
+응답함</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : limit_rate
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id30">
+<h3>* Syntax<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;limit_rate_after&quot;</span> <span class="p">:</span> <span class="s">&quot;0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="resolver">
+<h2>7.4 Resolver<a class="headerlink" href="#resolver" title="Permalink to this headline">¶</a></h2>
+<p>PINIX가 채택할 네임서버를 명시적으로 지정</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : resolver
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id31">
+<h3>* Syntax<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;resolver&quot;</span> <span class="p">:</span> <span class="s">&quot;127.0.0.1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="resolver-timeout">
+<h2>7.5 Resolver Timeout<a class="headerlink" href="#resolver-timeout" title="Permalink to this headline">¶</a></h2>
+<p>네임서버 질의응답 타임아웃 설정</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : limit_rate_after
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id32">
+<h3>* Syntax<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;resolver_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;30s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cache-regex-purge">
+<h2>7.6 Cache Regex Purge<a class="headerlink" href="#cache-regex-purge" title="Permalink to this headline">¶</a></h2>
+<p>정규표현식에 따른 캐시 퍼지(캐시 삭제 및 갱신) 기능 활성화 여부를
+결정한다. ON 했을 시, 해당 기능은 활성화 된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : cache_rpurge
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id33">
+<h3>* Syntax<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;cache_rpurge&quot;</span> <span class="p">:</span> <span class="s">&quot;on&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="compression">
+<h1>8. Compression<a class="headerlink" href="#compression" title="Permalink to this headline">¶</a></h1>
+<p>가상호스트 형식으로 제공되는 컨텐츠에 대한 Gzip 압축 파일 인코딩에 대한
+활성화 여부를 지정할 수 있다.</p>
+<div class="section" id="gzip">
+<h2>8.1 GZip<a class="headerlink" href="#gzip" title="Permalink to this headline">¶</a></h2>
+<p>요청 받은 컨텐츠를 Gzip 압축 형식으로 압축하여 응답한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : gzip
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id34">
+<h3>* Syntax<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;gzip&quot;</span> <span class="p">:</span> <span class="s">&quot;on&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gzip-static">
+<h2>8.2 Gzip Static<a class="headerlink" href="#gzip-static" title="Permalink to this headline">¶</a></h2>
+<p>요청 때마다 실시간으로 문서를 압축하는 대신 미리 Gzip 형식으로 압축해
+놓은 문서를 전송할 수 있다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : gzip_static
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id35">
+<h3>* Syntax<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;gzip_static&quot;</span> <span class="p">:</span> <span class="s">&quot;on&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gzip-disable">
+<h2>8.3 Gzip Disable<a class="headerlink" href="#gzip-disable" title="Permalink to this headline">¶</a></h2>
+<p>HTTP 헤더에 포함된 클라이언트 에이젼트 정보를 토대로, Gzip 압축 형식을
+진행하지 않을 예외 에이젼트 정보를 지정한다. 정규표현식을 통한 에이젼트
+정보 지정이 가능하다. user-agent를 확인하여 해당 제품의 버전일 경우 압축
+안함.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : gzip_disable
+- Type    : json array
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id36">
+<h3>* Syntax<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;gzip_disable&quot;</span> <span class="p">:</span> <span class="s">&quot;MSIE [1-6]</span><span class="se">\\</span><span class="s">.(?!.*SV1)&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mime-types">
+<h1>9. Mime Types<a class="headerlink" href="#mime-types" title="Permalink to this headline">¶</a></h1>
+<p>PINIX의 가상호스트에서 처리 가능한 Mime Type 정보를 지정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword :
+- Type    : pinix mime type
+- Location: vhost
+</pre></div>
+</div>
+<div class="section" id="id37">
+<h2>* Syntax<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>types {
+
+    text/html                             html htm shtml;
+    text/css                              css;
+    text/xml                              xml;
+    image/gif                             gif;
+    image/jpeg                            jpeg jpg;
+}
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="VHost.html" class="btn btn-neutral" title="1. Name" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Read the Docs.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

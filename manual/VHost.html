@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Name &mdash; Read the Docs Template 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read the Docs Template 1.0 documentation" href="index.html"/>
+        <link rel="next" title="1. 가상호스트 목록" href="VHost-Proxy.html"/>
+        <link rel="prev" title="1. Name" href="Origin.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Read the Docs Template
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Global.html">1. Global Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#pinix-process-user">1.1 PINIX Process User</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#worker-process-count">1.2 Worker Process Count</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#access-log-file-path">1.3 Access log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#log-format">1.4 Log format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id3">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#proxy">2. Proxy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#temporary-cache-path">2.1 Temporary Cache Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#cache-path-list-config">2.2 Cache Path List &amp; Config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Global.html#id5">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#server-access-control">3. Server Access Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#cluster">4. Cluster</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Global.html#id7">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Global.html#vhost-list">5. VHost List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html">1. Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Origin.html#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html#schedule">2. Schedule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Origin.html#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Origin.html#server">3. Server</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">1. Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syntax">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#uri-terms">2. uri_terms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#upper-case">3. Upper Case</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#lower-case">4. Lower Case</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#location-mode">5. Location Mode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#normal-mode">5.1 Normal Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#streaming">5.1.1 Streaming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ttl">5.1.2. TTL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vary">5.1.3. Vary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rewrite-type">5.1.4. Rewrite Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cache-mode">5.2 Cache Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cache">5.2.1. Cache</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">5.2.2 Streaming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">5.2.3. TTL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">5.2.4. Vary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#freshness-check">5.2.5. Freshness Check</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#intercept-errors">5.2.6. Intercept Errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bypass">5.2.7. Bypass</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#set-header">5.2.8. Set Header</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#syntax-default">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ignore-headers">5.2.9. Ignore Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#add-headers">5.2.10. Add Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pass-headers">5.2.11. Pass Headers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id18">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-upstream">5.2.12. Next Upstream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-timeout">5.2.13. Connect Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#send-timeout">5.2.14. Send Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#read-timeout">5.2.15. Read Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">* Syntax ( Default )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#proxy-pass">5.2.16. Proxy Pass</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html">1. 가상호스트 목록</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#process">2. Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#syntax">* Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#service-port">2.2 Service Port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id2">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#record-404-error-log">2.3 Record 404 error log</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id3">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#default-type">2.4 Default Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id4">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#error-log-file-path">2.5 Error Log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id5">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#common-log-file-path">2.6 Common Log File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id6">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#access-log-format-type">2.7 Access log format type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id7">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#https">3. HTTPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#port">3.2 Port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id8">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#protocols">3.3 Protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id9">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#certificate">3.4 Certificate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id10">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#certificate-key">3.5 Certificate Key</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id11">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#session-timeout">3.6 Session Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id12">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#client">4. Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#etag">4.1 ETAG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id13">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#falsification-check">4.2 Falsification Check</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id14">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#client-response-header">4.3 Client Response Header</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id15">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#client-body-timeout">4.4 Client Body Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id16">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#client-header-timeout">4.5 Client Header Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id17">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#send-timeout">4.6 Send Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id18">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#keepalive-timeout">4.7 Keepalive Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id19">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#keepalive-requests">4.8 Keepalive Requests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id20">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#proxy">5. Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#secure-url">6. Secure URL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#id21">6.1 Secure URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#secure-algorithm-type">6.2 Secure Algorithm Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id22">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#secure-url-character-case">6.3 Secure URL Character Case</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id23">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#callback-domain">6.4 Callback Domain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id24">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#callback-file-path">6.5 Callback File Path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id25">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#url-forwarding-results">6.6 URL forwarding results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id26">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#secure-url-key">6.7 Secure URL Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#secure-url-value">6.8 Secure URL Value</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#server-access-control">7. Server Access Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#id27">7.1 Server Access Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id28">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#bandwidth">7.2 Bandwidth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id29">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#bandwidth-after">7.3 Bandwidth After</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id30">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#resolver">7.4 Resolver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id31">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#resolver-timeout">7.5 Resolver Timeout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id32">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#cache-regex-purge">7.6 Cache Regex Purge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id33">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#compression">8. Compression</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#gzip">8.1 GZip</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id34">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#gzip-static">8.2 Gzip Static</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id35">* Syntax</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#gzip-disable">8.3 Gzip Disable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="VHost-Proxy.html#id36">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="VHost-Proxy.html#mime-types">9. Mime Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="VHost-Proxy.html#id37">* Syntax</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read the Docs Template</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>1. Name</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/VHost.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div id="vhost-list"><div class="highlight-python"><div class="highlight"><pre>&lt;h4&gt;목차&lt;/h4&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&quot;#1-name&quot;&gt;Name&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#2-uri_terms&quot;&gt;uri_terms&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#3-upper-case&quot;&gt;Upper Case&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#4-lower-case&quot;&gt;Lower Case&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#5-location-mode&quot;&gt;Location Mode&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#11-pinix-process-user&quot;&gt;Normal Mode&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#51-normal-mode&quot;&gt;Normal Mode&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#511-streaming&quot;&gt;Streaming&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#512-ttl&quot;&gt;TTL&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#513-vary&quot;&gt;Vary&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#514-rewrite-type&quot;&gt;Rewrite Type&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#52-cache-mode&quot;&gt;Cache Mode&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#521-cache&quot;&gt;Cache&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#522-streaming&quot;&gt;Streaming&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#523-ttl&quot;&gt;TTL&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#524-vary&quot;&gt;Vary&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#525-freshness-check&quot;&gt;Freshness Check&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#526-intercept-errors&quot;&gt;Intercept Errors&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#527-bypass&quot;&gt;Bypass&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#528-set-header&quot;&gt;Set Header&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#529-ignore-headers&quot;&gt;Ignore Headers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5210-add-headers&quot;&gt;Add Headers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5211-pass-headers&quot;&gt;Pass Headers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5212-next-upstream&quot;&gt;Next Upstream&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5213-connect-timeout&quot;&gt;Connect Timeout&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5214-send-timeout&quot;&gt;Send Timeout&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5215-read-timeout&quot;&gt;Read Timeout&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#5216-proxy-pass&quot;&gt;Proxy Pass&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+</pre></div>
+</div>
+</div><hr class="docutils" />
+<div class="section" id="name">
+<h1>1. Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h1>
+<p>Proxy 캐시 설정의 고유 이름이다. 해당 설정의 이름은 그 자체로서는 기능적
+특성이 없으나 해당 설정의 고유 구분자로서 사용된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : name
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="syntax">
+<h2>* Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;name&quot;</span> <span class="p">:</span> <span class="s">&quot;default_location&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="uri-terms">
+<h1>2. uri_terms<a class="headerlink" href="#uri-terms" title="Permalink to this headline">¶</a></h1>
+<p>Proxy 설정의 URI 형식을 지정한다. 정규 표현식을 통한 URI 형식 분기가
+가능하며, 지정한 URI 형식에 대한 반응 형식을 지정할 수 있다. * Default
+: URI 형식 요청이 완전히 일치하는 요청에 대해 반응한다. * Sensitive :
+URI 형식에서 대소문자를 구분 한다. * Insensitive : URI 형식에서
+대소문자를 구분 한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : uri_terms
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h2>* Syntax<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;uri_terms&quot;</span> <span class="p">:</span> <span class="s">&quot;/proxy_pinix&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="upper-case">
+<h1>3. Upper Case<a class="headerlink" href="#upper-case" title="Permalink to this headline">¶</a></h1>
+<p>클라이언트가 요청한 URI를 모두 대문자로 변경한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : uri_uppercase
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h2>* Syntax<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;uri_uppercase&quot;</span> <span class="p">:</span> <span class="s">&quot;off&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="lower-case">
+<h1>4. Lower Case<a class="headerlink" href="#lower-case" title="Permalink to this headline">¶</a></h1>
+<p>클라이언트가 요청한 URI를 모두 소문자로 변경한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : uri_lowercase
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id3">
+<h2>* Syntax<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;uri_lowercase&quot;</span> <span class="p">:</span> <span class="s">&quot;off&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="location-mode">
+<h1>5. Location Mode<a class="headerlink" href="#location-mode" title="Permalink to this headline">¶</a></h1>
+<p>PINIX 웹을 통한 설정에서 Location 모드와 Cache(proxy) 모드를 설정한다.</p>
+<ul class="simple">
+<li>Normal Mode : URI 전처리를 통해 내부적으로 다른 Location으로 분기</li>
+<li>Cache Mode : 클라이언트의 요청을 원본서버와 같은 다른 서버로 전달</li>
+</ul>
+<div class="section" id="normal-mode">
+<h2>5.1 Normal Mode<a class="headerlink" href="#normal-mode" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트의 요청을 URI 전처리를 통해 내부적으로 다른 Location으로
+분기를 가능하게 한다. 이를 이용하면 클라이언트의 요청에 따라 다양한
+응답을 가능하게 할 수 있다.</p>
+</div>
+<div class="section" id="streaming">
+<h2>5.1.1 Streaming<a class="headerlink" href="#streaming" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트가 캐싱되지 않은 컨텐츠를 요청했을 때, 캐싱이 완료되지 않아도
+지연 없이 서비스를 제공받을 수 있다. ( 원본서버로부터 캐싱을 하면서
+동시에 서비스를 제공 받는다. )</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : streaming
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id4">
+<h3>* Syntax<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>{
+    &quot;streaming&quot; : &quot;off&quot;          //&lt;- Default : off
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ttl">
+<h2>5.1.2. TTL<a class="headerlink" href="#ttl" title="Permalink to this headline">¶</a></h2>
+<p>컨텐츠 요청에 대한 만료시간을 설정한다. 해당 기능을 ON으로 설정했을
+경우, 기능이 활성화된다. * Expire Time : 컨텐츠의 유효시간을 설정한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : expires
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id5">
+<h3>* Syntax<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>{
+    &quot;expires&quot;: &quot;1d&quot;
+}
+or
+{
+    &quot;expires&quot;: &quot;max&quot;
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="vary">
+<h2>5.1.3. Vary<a class="headerlink" href="#vary" title="Permalink to this headline">¶</a></h2>
+<p>컨텐츠의 Gzip 인코딩 기능 활성화 여부를 결정한다. ON으로 설정했을 경우,
+해당 기능이 활성화된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : gzip_vary
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id6">
+<h3>* Syntax<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;gzip_vary&quot;</span> <span class="p">:</span> <span class="s">&quot;off&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="rewrite-type">
+<h2>5.1.4. Rewrite Type<a class="headerlink" href="#rewrite-type" title="Permalink to this headline">¶</a></h2>
+<p>클라어인트의 요청에 대해 URI 전처리를 수행한다. URI 전처리 타입을
+URI모드 PASS 두가지로 제공한다. URI모드의 경우 클라이언트의 요청을
+정규표현식을 통해서 내부적으로 다른 Location으로 분기할 수 있다.
+PASS모드의 경우 클라이언트의 요청을 정규표현식 없이 내부적으로 Proxy
+이름을 기준으로 분기 할 수 있다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : rewrite
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id7">
+<h3>* Syntax<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>{
+    &quot;rewrite&quot; :
+    [
+        {
+            &quot;type&quot; : &quot;pass&quot;,                       //&lt;- URI or PASS
+            &quot;source&quot; : &quot;(.*)&quot;,
+            &quot;destination&quot; : &quot;default_location&quot;
+        }
+    ]
+}
+or
+{
+    &quot;rewrite&quot; :
+    [
+        {
+            &quot;type&quot; : &quot;uri&quot;,                       //&lt;- URI or PASS
+            &quot;source&quot; : &quot;(.*)&quot;,
+            &quot;destination&quot; : &quot;/pinix_proxy&quot;
+        }
+    ]
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cache-mode">
+<h2>5.2 Cache Mode<a class="headerlink" href="#cache-mode" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트의 요청에 다양한 캐싱 정책을 반영하여 원본서버와 같은 다른
+서버로 요청을 전달하는데 목적이 있다.</p>
+</div>
+<div class="section" id="cache">
+<h2>5.2.1. Cache<a class="headerlink" href="#cache" title="Permalink to this headline">¶</a></h2>
+<p>캐시 컨텐츠 제공에 필요한 기반 설정을 선택한다. 전역설정에서 지정한
+프록시 항목의 캐시 키 존에 대한 설정을 적용 한다. 하나의 캐시 키 존은
+다수의 Proxy 설정에 적용이 가능하다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : cache_zone
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id8">
+<h3>* Syntax<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;cache_zone&quot;</span><span class="p">:</span> <span class="s">&quot;cache_one&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>5.2.2 Streaming<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>5.1.1 Streaming 과 동일</p>
+</div>
+<div class="section" id="id10">
+<h2>5.2.3. TTL<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>캐시 컨텐츠의 만료 시간을 설정하여, 캐시 컨텐츠의 갱신 주기를 지정할 수
+있다. * Expire time : 캐시의 만료주기를 설정하며
+초(s),분(m),시(h),일(d),월(M)에 대한 설정 가능 * Response Code :
+프록시되는 서버로부터 응답에 따른 캐시의 유효시간을 설정</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : cache_valid &amp; expires
+- Type    : json array &amp; string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id11">
+<h3>* Syntax<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>{
+    &quot;cache_valid&quot;:                                  //&lt;- TTL : 응답코드
+    [
+        &quot;200 206 304 1y&quot;,
+        &quot;404 1m&quot;
+    ],
+    &quot;expires&quot;: &quot;max&quot;
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>5.2.4. Vary<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>5.1.3 Vary와 동일</p>
+</div>
+<div class="section" id="freshness-check">
+<h2>5.2.5. Freshness Check<a class="headerlink" href="#freshness-check" title="Permalink to this headline">¶</a></h2>
+<p>캐시 된 컨텐츠의 최종 갱신 데이터 여부를 점검한다. ON으로 설정할 시 해당
+기능이 활성화 된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : cache_revalid
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id13">
+<h3>* Syntax<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;cache_revalid&quot;</span> <span class="p">:</span> <span class="s">&quot;off&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="intercept-errors">
+<h2>5.2.6. Intercept Errors<a class="headerlink" href="#intercept-errors" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트 요청에 의한 HTTP 상태 코드에 따른 응답을 운영자가 임의로
+지정한 별도 컨텐츠 응답으로 응답할 수 있도록 설정 할 수 있다. * HTTP
+Status Code : HTTP 상태 코드 (ex: 404) * Redirect Target :
+/error_page/404.html</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : intercept_errors
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id14">
+<h3>* Syntax<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;intercept_errors&quot;</span> <span class="p">:</span>
+    <span class="p">[</span>
+        <span class="p">{</span> <span class="s">&quot;403&quot;</span> <span class="p">:</span> <span class="s">&quot;/403_default.jpg&quot;</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="s">&quot;404&quot;</span> <span class="p">:</span> <span class="s">&quot;/404_default.jpg&quot;</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="s">&quot;500 502 503 504&quot;</span> <span class="p">:</span> <span class="s">&quot;/50x_default.html&quot;</span> <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bypass">
+<h2>5.2.7. Bypass<a class="headerlink" href="#bypass" title="Permalink to this headline">¶</a></h2>
+<p>특정 캐시 컨텐츠 요청에 대하여, 캐싱 예외를 둘 수 있다. Bypass 기능을
+활성화 한 후, Content-Type 지정하게 되면, 해당 Content-Type에 해당하는
+컨텐츠는 캐싱 항목에서 제외된다. No Cache Bypass 기능을 설정할 시 해당
+기능은 비활성화 된다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : cache_bypass
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id15">
+<h3>* Syntax<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>{
+    &quot;cache_bypass&quot; :       //&lt;- cache_bypass_extension
+    [
+        &quot;html&quot;,
+        &quot;css&quot;,
+        &quot;js&quot;
+    ]
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="set-header">
+<h2>5.2.8. Set Header<a class="headerlink" href="#set-header" title="Permalink to this headline">¶</a></h2>
+<p>요청헤더에 필드를 재정의 또는 추가 한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : set_header
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="syntax-default">
+<h3>* Syntax ( Default )<a class="headerlink" href="#syntax-default" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;set_header&quot;</span> <span class="p">:</span>
+    <span class="p">[</span>
+        <span class="s">&quot;X-Forwarded-For $remote_addr&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Host $host&quot;</span><span class="p">,</span>
+        <span class="s">&quot;If-Range $http_if_range&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Service-Type $http_service_type&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Cache-Backend $http_cache_backend&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ignore-headers">
+<h2>5.2.9. Ignore Headers<a class="headerlink" href="#ignore-headers" title="Permalink to this headline">¶</a></h2>
+<p>프록시 서버의 특정 응답헤더 필드의 처리를 하지 않는다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : ignore_headers
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id16">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;ignore_headers&quot;</span> <span class="p">:</span>
+    <span class="p">[</span>
+        <span class="s">&quot;Set-Cookie&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Expires&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Cache-Control&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="add-headers">
+<h2>5.2.10. Add Headers<a class="headerlink" href="#add-headers" title="Permalink to this headline">¶</a></h2>
+<p>클라이언트에게 보내는 HTTP응답헤더를 추가한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : add_header
+- Type    : json array
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id17">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;add_header&quot;</span> <span class="p">:</span>
+    <span class="p">[</span>
+        <span class="s">&quot;X-Cache-Status $upstream_cache_status&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pass-headers">
+<h2>5.2.11. Pass Headers<a class="headerlink" href="#pass-headers" title="Permalink to this headline">¶</a></h2>
+<p>금지된 응답헤더를 전송할 수 있다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : permits_header
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id18">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;permits_header&quot;</span> <span class="p">:</span> <span class="s">&quot;X-Accel-Redirect&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="next-upstream">
+<h2>5.2.12. Next Upstream<a class="headerlink" href="#next-upstream" title="Permalink to this headline">¶</a></h2>
+<p>해당 에러 및 타임아웃이 발생했을 때 요청을 다음 원본서버(upstream)으로
+전달한다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : next_backend
+- Type    : json object
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id19">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;next_backend&quot;</span> <span class="p">:</span>
+    <span class="p">{</span>
+        <span class="s">&quot;set&quot;</span> <span class="p">:</span> <span class="s">&quot;error timeout invalid_header&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="connect-timeout">
+<h2>5.2.13. Connect Timeout<a class="headerlink" href="#connect-timeout" title="Permalink to this headline">¶</a></h2>
+<p>프록시 서버와의 연결을 위한 시간 제한 정의 / 보통 75초 초과하지 않아야
+함. 초(s),분(m),시(h),일(d),월(M)에 대한 설정이 가능하다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : connect_timeout
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id20">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;connect_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;300s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="send-timeout">
+<h2>5.2.14. Send Timeout<a class="headerlink" href="#send-timeout" title="Permalink to this headline">¶</a></h2>
+<p>프록시 서버에 요청을 전송하기 위한 시간제한 설정
+초(s),분(m),시(h),일(d),월(M)에 대한 설정이 가능하다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : send_timeout
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id21">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;send_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;300s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="read-timeout">
+<h2>5.2.15. Read Timeout<a class="headerlink" href="#read-timeout" title="Permalink to this headline">¶</a></h2>
+<p>프록시 서버의 응답을 읽기 위해 시간 제한을 정의
+초(s),분(m),시(h),일(d),월(M)에 대한 설정이 가능하다.</p>
+<div class="highlight-python"><div class="highlight"><pre>- Keyword : read_timeout
+- Type    : json string
+- Location: location
+</pre></div>
+</div>
+<div class="section" id="id22">
+<h3>* Syntax ( Default )<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;read_timeout&quot;</span> <span class="p">:</span> <span class="s">&quot;30s&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="proxy-pass">
+<h2>5.2.16. Proxy Pass<a class="headerlink" href="#proxy-pass" title="Permalink to this headline">¶</a></h2>
+<p>요청된 Proxy 설정의 URI정보를 Origin서버 혹은 사용자 정의 목적지를 향해
+전달되도록 설정할 수 있다. * protocol : 요청 프로토콜을 지정 ( http or
+https ) * origin : 원본서버 혹은 사용자가 원하는 서버의 주소를 지정 *
+ - Keyword : backend - Type : json object - Location: location <code class="docutils literal"><span class="pre">`</span> <span class="pre">######</span> <span class="pre">*</span> <span class="pre">Syntax</span> <span class="pre">(</span> <span class="pre">Default</span> <span class="pre">)</span> <span class="pre">`</span></code> {  &#8220;backend&#8221; :  {  &#8220;protocol&#8221; : &#8220;http&#8221;,  &#8220;origin&#8221; : &#8220;default_origin`oriUri&#8221;
+} } ```</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="VHost-Proxy.html" class="btn btn-neutral float-right" title="1. 가상호스트 목록" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Origin.html" class="btn btn-neutral" title="1. Name" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Read the Docs.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
